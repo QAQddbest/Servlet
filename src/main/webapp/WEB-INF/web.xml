@@ -4,7 +4,7 @@
          version="2.5">
     <display-name>servlet</display-name>
     <welcome-file-list>
-        <welcome-file>/WEB-INF/classes/index.html</welcome-file>
+        <welcome-file>/WEB-INF/classes/html/index.html</welcome-file>
     </welcome-file-list>
 
     <servlet>
@@ -16,4 +16,12 @@
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>dd.oliver.servlet.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 </web-app>
