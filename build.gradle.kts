@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4.0"
+    kotlin("jvm") version "1.4.10"
     war
 }
 
@@ -13,6 +13,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(group = "javax", name = "javaee-api", version = "7.0")
+    implementation("redis.clients:jedis:3.3.0")
 }
 
 tasks {
