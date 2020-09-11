@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.4.10"
+    kotlin("plugin.serialization") version "1.4.10"
     war
 }
 
@@ -14,6 +15,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(group = "javax", name = "javaee-api", version = "7.0")
     implementation("redis.clients:jedis:3.3.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
 }
 
 tasks {
